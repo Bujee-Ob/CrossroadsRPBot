@@ -53,6 +53,9 @@ bot.on('message', message => {
                const attachment2 = new Discord.MessageAttachment('https://media4.giphy.com/media/WXB88TeARFVvi/giphy.gif?cid=ecf05e47qv3agf5e63f8ky2gw5qmghs9upgezvafuecr8tfq&rid=giphy.gif');
                 message.channel.send(attachment2);
                 break;
+        case 'ping':
+          bot.commands.get('ping').execute(message);
+          break;
         }
     }
 )
