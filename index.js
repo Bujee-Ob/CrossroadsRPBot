@@ -56,6 +56,10 @@ bot.on('message', message => {
         case 'ping':
           bot.commands.get('ping').execute(message);
           break;
+          case 'reporet':
+            const {MessageEmbed} = require("discord.js");
+            bot.commands.get('reporet').execute(bot, message, args);
+            break;
         }
     }
 )

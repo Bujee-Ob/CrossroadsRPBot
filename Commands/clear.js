@@ -4,7 +4,7 @@ module.exports = {
     description: "Clears chat",
 
     execute(message, args) {
-        if (!message.member.roles.cache.get('797636936495136789') || !message.member.hasPermission('ADMINISTRATOR')) {
+        if (!message.member.roles.cache.get('797599799074750513') || !message.member.hasPermission('ADMINISTRATOR')) {
             message.delete();
             message.reply('You do not have the permission to use the "clear" command!');
             return;
