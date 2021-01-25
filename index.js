@@ -60,6 +60,9 @@ bot.on('message', message => {
             const {MessageEmbed} = require("discord.js");
             bot.commands.get('reporet').execute(bot, message, args);
             break;
+          case 'github':
+            bot.commands.get('github').execute(message);
+            break;
         }
     }
 )
