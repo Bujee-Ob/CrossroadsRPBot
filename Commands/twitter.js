@@ -4,6 +4,6 @@ module.exports = {
     description: "Gives a twitter",
 
     execute(message) {
-        message.reply('This command is not setup yet!');
+        message.reply('Dont have one right now.');
     }
 }
